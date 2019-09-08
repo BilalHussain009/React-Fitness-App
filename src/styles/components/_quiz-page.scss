@@ -1,0 +1,205 @@
+.questionPage{
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("https://i.ibb.co/p3wH8F1/alora-griffiths-Tl-Pi64vvi-Rc-unsplash.jpg");
+  background-size: cover;
+  h1{
+    margin: 0;
+  }
+}
+.top-heading{
+  padding-top: 4%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 5rem;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.below-heading{
+  font-family: 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  color: white;
+}
+.btn-cont {
+  
+  text-align: center;
+  padding-left: 35vw;
+  padding-right: 35vw;
+margin-bottom: 5rem; 
+display: flex;
+text-align: center;
+flex-direction: column; 
+  .btn {
+    position: relative;
+    padding: 20px 100px;
+    
+
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: em(18px);
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-font-smoothing: antialiased;
+    
+    &:hover {
+      border: none;
+      
+      .line-1 {
+        animation: move1 1500ms infinite ease;
+      }
+      
+      .line-2 {
+        animation: move2 1500ms infinite ease;
+      }
+      
+      .line-3 {
+        animation: move3 1500ms infinite ease;
+      }
+      
+      .line-4 {
+        animation: move4 1500ms infinite ease;
+      }
+    }
+  }
+  
+  .line-1 {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+  }
+  .line-2 {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    background-color: white;
+    left: 0;
+    top: 0;
+  }
+  .line-3 {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    background-color: white;
+    right: 0;
+    top: 0;
+  }
+  .line-4 {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    background-color: white;
+    right: 0;
+    bottom: 0;
+  }
+}
+.main-cont{
+  padding-top: 9vh;
+}
+
+@keyframes move1 {
+  0% {
+    height: 100%; 
+    bottom: 0;
+  }
+  54% {
+    height: 0; 
+    bottom: 100%;
+  }
+  55% {
+    height: 0; 
+    bottom: 0;
+  }
+  100% {
+    height: 100%; 
+    bottom: 0;
+  }
+}
+
+@keyframes move2 {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: 100%; 
+    left: 0;
+  }
+  100% {
+    width: 0; 
+    left: 100%;
+  }
+}
+
+@keyframes move3 {
+  0% {
+    height: 100%; 
+    top: 0;
+  }
+  54% {
+    height: 0; 
+    top: 100%;
+  }
+  55% {
+    height: 0; 
+    top: 0;
+  }
+  100% {
+    height: 100%; 
+    top: 0;
+  }
+}
+
+@keyframes move4 {
+  0% {
+    width: 0; 
+    right: 0;
+  }
+  55% {
+    width: 100%; 
+    right: 0;
+  }
+  100% {
+    width: 0; 
+    right: 100%;
+  }
+}
+.central-box{
+  text-align: center;
+}
+@media (max-width: $desktop-breakpoint) {
+  .btn-cont {
+    padding-left: 15vw;
+  padding-right: 15vw;
+  margin-bottom: 1rem;
+  .btn{
+    padding: 20px 5px
+  }
+  }
+  .top-heading{
+    padding-top: 4%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.2rem;
+    font-size: 4.5rem;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .main-cont {
+    padding-top: 9vh;
+}
+.below-heading{
+  text-align: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+}

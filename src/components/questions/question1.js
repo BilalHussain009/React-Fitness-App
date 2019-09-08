@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import { Progress } from 'semantic-ui-react'
 import configureStore from '../../store/configureStore';
 const store = configureStore();
 import {startAddChoices} from '../../actions/questions';
@@ -62,7 +63,9 @@ render(){
             
            
         </form>
+        <Progress value='3' total='5' progress='ratio' />
         </div>
+        
     </div>
     )
 }

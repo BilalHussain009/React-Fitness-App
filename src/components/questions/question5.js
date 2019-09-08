@@ -21,21 +21,48 @@ question5c=(e)=>{
 };
 render(){
     return(
-<div>
-        <form>
-            <h1>
-            {this.props.questions[4][0][1]}
+
+        
+    <div className='questionPage'>
+    <div className='central-box'>
+    <form>
+             <h1 className='top-heading'>
+             {this.props.questions[4][0][1]}
             </h1>
-            <button onClick={this.question5a}>
-            {this.props.questions[4][0][2]}
-            </button>
-            <button onClick={this.question5b}>
-            {this.props.questions[4][0][3]}
-            </button>
-            <button onClick={this.question5c}>
-            {this.props.questions[4][0][4]}
-            </button>
+            
+            <div className='main-cont'>
+                <div className='btn-cont'>
+  <a onClick={this.question5a} className='btn' href='#'>
+  {this.props.questions[4][0][2]}  <span className='line-1'></span>
+    <span className='line-2'></span>
+    <span className='line-3'></span>
+    <span className='line-4'></span>
+  </a>
+</div>
+<div className='btn-cont'>
+  <a className='btn' href='#'  onClick={this.question5b}>
+  {this.props.questions[4][0][3]}
+    <span className='line-1'></span>
+    <span className='line-2'></span>
+    <span className='line-3'></span>
+    <span className='line-4'></span>
+  </a>
+</div>
+<div className='btn-cont'>
+  <a className='btn' href='#'  onClick={this.question5c}>
+  {this.props.questions[4][0][4]}
+    <span className='line-1'></span>
+    <span className='line-2'></span>
+    <span className='line-3'></span>
+    <span className='line-4'></span>
+  </a>
+</div>
+
+
+
+            </div>
         </form>
+        </div>
     </div>
     )
 }

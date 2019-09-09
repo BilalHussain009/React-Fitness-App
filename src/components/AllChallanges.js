@@ -1,9 +1,11 @@
 import React from 'react';
-import { Progress } from 'semantic-ui-react'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
+import NavBar from './NavBar';
 import {Link} from 'react-router-dom';
 const AllChallanges=()=>(
-    <div class='back-challanges'>
+    <div className='back-challanges'>
+      <NavBar/>
         <h4>
             All Challanges
         </h4>

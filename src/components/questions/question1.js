@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import { Progress } from 'semantic-ui-react'
+
 import configureStore from '../../store/configureStore';
 const store = configureStore();
 import {startAddChoices} from '../../actions/questions';
@@ -33,7 +33,7 @@ render(){
             </h2>
             <div className='main-cont'>
                 <div className='btn-cont'>
-  <a onClick={this.question1a} className='btn' href='#'>
+  <a onClick={this.question1a} className='btn' >
 {this.props.questions[0][0][3]}    <span className='line-1'></span>
     <span className='line-2'></span>
     <span className='line-3'></span>
@@ -41,7 +41,7 @@ render(){
   </a>
 </div>
 <div className='btn-cont'>
-  <a className='btn' href='#'  onClick={this.question1b}>
+  <a className='btn'   onClick={this.question1b}>
   {this.props.questions[0][0][4]}
     <span className='line-1'></span>
     <span className='line-2'></span>
@@ -63,7 +63,6 @@ render(){
             
            
         </form>
-        <Progress value='3' total='5' progress='ratio' />
         </div>
         
     </div>

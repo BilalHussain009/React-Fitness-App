@@ -28,7 +28,7 @@ export const startAddChoices=(choice)=>{
   return(dispatch,getState)=>{
     console.log(choice);
     let choices=[];
-    localStorage.getItem('choices')==null ? choices=[]:choices=[localStorage.getItem('choices')];
+    localStorage.getItem('choices')==[] ? choices=[]:choices=[localStorage.getItem('choices')];
     console.log(choices);
     choices.push(choice);
     return localStorage.setItem('choices',choices);

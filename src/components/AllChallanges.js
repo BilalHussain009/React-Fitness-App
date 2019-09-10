@@ -11,7 +11,7 @@ const AllChallanges=()=>(
         </h4>
         <div className="wrapper">
       <div className="cards">
-        <Link to='/merch' className="flink">
+        <Link to='/choosemode' className="flink">
         <div className="card">
        
           <div className="card-content">
@@ -65,7 +65,7 @@ const AllChallanges=()=>(
           </div>
         </div> */}
         </Link>
-        <Link to='/merch' className="flink">
+        <Link to='/choosemode' className="flink">
         <div className="card">
           <div className="card-content">
             <div className="top">
@@ -92,7 +92,7 @@ const AllChallanges=()=>(
           </div>
         </div>
         </Link>
-        <Link to='/merch' className="flink">
+        <Link to='/choosemode' className="flink">
         <div className="card">
           <div className="card-content">
             <div className="top">
@@ -119,7 +119,7 @@ const AllChallanges=()=>(
           </div>
         </div>
         </Link>
-        <Link to='/merch' className="flink">
+        <Link to='/choosemode' className="flink">
         <div className="card">
           <div className="card-content">
             <div className="top">

@@ -26,7 +26,7 @@ const AppRouter = () => (
         <Route path="/firsttime" component={FirstTime}/>
         
         <Route path='/allChallenges' component={AllChallanges}/>
-        <Route path='/chooseMode' component={chooseMode}/>
+        <Route path='/choosemode' component={chooseMode}/>
         <Route component={NotFoundPage} />
       </Switch>
      

@@ -6,6 +6,7 @@ $transparent-white: rgba(255, 255, 255, 0.15);
 
 
 
+  
 
 .menu {
 	ol {
@@ -32,24 +33,26 @@ $transparent-white: rgba(255, 255, 255, 0.15);
 		position: relative;
 		transition: background 0.3s ease-in-out;
 
+		
 		&:nth-child(1) > a::before {
-			font-family: "Ionicons";
-			content: "\f425";		}
+			content: url("https://i.ibb.co/021rF94/plan.png");
+			
+		}
 
 		&:nth-child(2) > a::before {
-			content: "\f05a";
+			content: url("https://i.ibb.co/nrKLGkD/abs.png");
 		}
 
 		&:nth-child(3) > a::before {
-			content: "\f0ad";
+			content: url("https://i.ibb.co/nbhqKPT/report.png");
 		}
 
 		&:nth-child(4) > a::before {
-			content: "\f2e7";
+			content: url("https://i.ibb.co/Q8tQ9mv/man-1.png");
 		}
 
 		&:nth-child(5) > a::before {
-			content: "\f007";
+			content: url("https://i.ibb.co/TLVZ8vb/star.png");
 		}
 
 		@for $i from 1 through 5 {

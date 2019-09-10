@@ -1,15 +1,70 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import Modal from 'react-modal';
 const chooseMode=()=>(
-    <div>
-        <h1>Work Out name here</h1>
-        <Link to='/dashboard'>Easy1</Link>
-        <Link to='/dashboard'>Easy2</Link>
-        <Link to='/dashboard'>Medium1</Link>
-        <Link to='/dashboard'>Medium2</Link>
-        <Link to='/dashboard'>Hard1</Link>
-        <Link to='/dashboard'>Hard2</Link>
+    <div className='bg-div'>
+    <div className="main-div">
+        <div className='swanky_wrapper'>
+            
+    <input id='Dashboard' name='radio' type='radio'></input>
+    <label htmlFor='Dashboard'>
+    <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzMDAuNDM5IDMwMC40MzkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMwMC40MzkgMzAwLjQzOTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPHBhdGggc3R5bGU9ImZpbGw6I0JGMzkyQzsiIGQ9Ik0yNzYuOTY3LDBoLTg0LjQ5OEw3MC40MTUsMTc4LjM4NWg4NC40OThMMjc2Ljk2NywweiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0UyNTc0QzsiIGQ9Ik0yMy40NzIsMGg4NC40OThsMTIyLjA1MywxNzguMzg1aC04NC40OThMMjMuNDcyLDB6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRUQ5RDVEOyIgZD0iTTE1NC45MTQsOTMuODg3YzU3LjI3MSwwLDEwMy4yNzYsNDYuMDA1LDEwMy4yNzYsMTAzLjI3NnMtNDYuMDA1LDEwMy4yNzYtMTAzLjI3NiwxMDMuMjc2ICAgUzUxLjYzOCwyNTQuNDM0LDUxLjYzOCwxOTcuMTYzUzk3LjY0Myw5My44ODcsMTU0LjkxNCw5My44ODd6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRDU4RDU0OyIgZD0iTTE1NC45MTQsMTIyLjA1M2MtNDEuMzEsMC03NS4xMSwzMy43OTktNzUuMTEsNzUuMTFzMzMuNzk5LDc1LjExLDc1LjExLDc1LjExICAgczc1LjExLTMzLjc5OSw3NS4xMS03NS4xMVMxOTYuMjI0LDEyMi4wNTMsMTU0LjkxNCwxMjIuMDUzeiBNMTU0LjkxNCwyNTMuNDk1Yy0zMC45ODMsMC01Ni4zMzItMjUuMzUtNTYuMzMyLTU2LjMzMiAgIHMyNS4zNS01Ni4zMzIsNTYuMzMyLTU2LjMzMnM1Ni4zMzIsMjUuMzUsNTYuMzMyLDU2LjMzMlMxODUuODk2LDI1My40OTUsMTU0LjkxNCwyNTMuNDk1eiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />      <span>Easy 1</span>
+      <div className='lil_arrow'></div>
+      <div className='bar'></div>
+      
+    </label>
+   
+    <input id='Sales' name='radio' type='radio'></input>
+    
+    <label htmlFor='Sales'>
+    <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzMDAuNDM5IDMwMC40MzkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMwMC40MzkgMzAwLjQzOTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPHBhdGggc3R5bGU9ImZpbGw6I0JGMzkyQzsiIGQ9Ik0yNzYuOTY3LDBoLTg0LjQ5OEw3MC40MTUsMTc4LjM4NWg4NC40OThMMjc2Ljk2NywweiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0UyNTc0QzsiIGQ9Ik0yMy40NzIsMGg4NC40OThsMTIyLjA1MywxNzguMzg1aC04NC40OThMMjMuNDcyLDB6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRUQ5RDVEOyIgZD0iTTE1NC45MTQsOTMuODg3YzU3LjI3MSwwLDEwMy4yNzYsNDYuMDA1LDEwMy4yNzYsMTAzLjI3NnMtNDYuMDA1LDEwMy4yNzYtMTAzLjI3NiwxMDMuMjc2ICAgUzUxLjYzOCwyNTQuNDM0LDUxLjYzOCwxOTcuMTYzUzk3LjY0Myw5My44ODcsMTU0LjkxNCw5My44ODd6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRDU4RDU0OyIgZD0iTTE1NC45MTQsMTIyLjA1M2MtNDEuMzEsMC03NS4xMSwzMy43OTktNzUuMTEsNzUuMTFzMzMuNzk5LDc1LjExLDc1LjExLDc1LjExICAgczc1LjExLTMzLjc5OSw3NS4xMS03NS4xMVMxOTYuMjI0LDEyMi4wNTMsMTU0LjkxNCwxMjIuMDUzeiBNMTU0LjkxNCwyNTMuNDk1Yy0zMC45ODMsMC01Ni4zMzItMjUuMzUtNTYuMzMyLTU2LjMzMiAgIHMyNS4zNS01Ni4zMzIsNTYuMzMyLTU2LjMzMnM1Ni4zMzIsMjUuMzUsNTYuMzMyLDU2LjMzMlMxODUuODk2LDI1My40OTUsMTU0LjkxNCwyNTMuNDk1eiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />      <span>Easy 2</span>
+      <div className='lil_arrow'></div>
+      <div className='bar'></div>
+     
+    </label>
+    
+    
+  </div>
 
+    </div>
+    <div className="main-div">
+        <div className='swanky_wrapper'>
+    <input id='Messages' name='radio' type='radio'></input>
+    <label htmlFor='Messages' >
+    <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzMDAuNDM5IDMwMC40MzkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMwMC40MzkgMzAwLjQzOTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPHBhdGggc3R5bGU9ImZpbGw6I0JGMzkyQzsiIGQ9Ik0yNzYuOTY3LDBoLTg0LjQ5OEw3MC40MTUsMTc4LjM4NWg4NC40OThMMjc2Ljk2NywweiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0UyNTc0QzsiIGQ9Ik0yMy40NzIsMGg4NC40OThsMTIyLjA1MywxNzguMzg1aC04NC40OThMMjMuNDcyLDB6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRTRFN0U3OyIgZD0iTTE1NC45MTQsOTMuODg3YzU3LjI3MSwwLDEwMy4yNzYsNDYuMDA1LDEwMy4yNzYsMTAzLjI3NnMtNDYuMDA1LDEwMy4yNzYtMTAzLjI3NiwxMDMuMjc2ICAgUzUxLjYzOCwyNTQuNDM0LDUxLjYzOCwxOTcuMTYzUzk3LjY0Myw5My44ODcsMTU0LjkxNCw5My44ODd6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojQ0RDRkNGOyIgZD0iTTE1NC45MTQsMTIyLjA1M2MtNDEuMzEsMC03NS4xMSwzMy43OTktNzUuMTEsNzUuMTFzMzMuNzk5LDc1LjExLDc1LjExLDc1LjExICAgczc1LjExLTMzLjc5OSw3NS4xMS03NS4xMVMxOTYuMjI0LDEyMi4wNTMsMTU0LjkxNCwxMjIuMDUzeiBNMTU0LjkxNCwyNTMuNDk1Yy0zMC45ODMsMC01Ni4zMzItMjUuMzUtNTYuMzMyLTU2LjMzMiAgIHMyNS4zNS01Ni4zMzIsNTYuMzMyLTU2LjMzMnM1Ni4zMzIsMjUuMzUsNTYuMzMyLDU2LjMzMlMxODUuODk2LDI1My40OTUsMTU0LjkxNCwyNTMuNDk1eiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />      <span>Medium 1</span>
+      <div className='lil_arrow'></div>
+      <div className='bar'></div>
+      
+    </label>
+    
+    <input id='Users' name='radio' type='radio'></input>
+    <label htmlFor='Users'>
+    <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzMDAuNDM5IDMwMC40MzkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMwMC40MzkgMzAwLjQzOTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPHBhdGggc3R5bGU9ImZpbGw6I0JGMzkyQzsiIGQ9Ik0yNzYuOTY3LDBoLTg0LjQ5OEw3MC40MTUsMTc4LjM4NWg4NC40OThMMjc2Ljk2NywweiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0UyNTc0QzsiIGQ9Ik0yMy40NzIsMGg4NC40OThsMTIyLjA1MywxNzguMzg1aC04NC40OThMMjMuNDcyLDB6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRTRFN0U3OyIgZD0iTTE1NC45MTQsOTMuODg3YzU3LjI3MSwwLDEwMy4yNzYsNDYuMDA1LDEwMy4yNzYsMTAzLjI3NnMtNDYuMDA1LDEwMy4yNzYtMTAzLjI3NiwxMDMuMjc2ICAgUzUxLjYzOCwyNTQuNDM0LDUxLjYzOCwxOTcuMTYzUzk3LjY0Myw5My44ODcsMTU0LjkxNCw5My44ODd6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojQ0RDRkNGOyIgZD0iTTE1NC45MTQsMTIyLjA1M2MtNDEuMzEsMC03NS4xMSwzMy43OTktNzUuMTEsNzUuMTFzMzMuNzk5LDc1LjExLDc1LjExLDc1LjExICAgczc1LjExLTMzLjc5OSw3NS4xMS03NS4xMVMxOTYuMjI0LDEyMi4wNTMsMTU0LjkxNCwxMjIuMDUzeiBNMTU0LjkxNCwyNTMuNDk1Yy0zMC45ODMsMC01Ni4zMzItMjUuMzUtNTYuMzMyLTU2LjMzMiAgIHMyNS4zNS01Ni4zMzIsNTYuMzMyLTU2LjMzMnM1Ni4zMzIsMjUuMzUsNTYuMzMyLDU2LjMzMlMxODUuODk2LDI1My40OTUsMTU0LjkxNCwyNTMuNDk1eiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />      <span>Medium 2</span>
+      <div className='lil_arrow'></div>
+      
+      
+    </label>
+    </div>
+    </div>
+    <div className="main-div">
+        <div className='swanky_wrapper'>
+    <input id='Messages' name='radio' type='radio'></input>
+    <label htmlFor='Messages' >
+    <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzMDAuNDM5IDMwMC40MzkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMwMC40MzkgMzAwLjQzOTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPHBhdGggc3R5bGU9ImZpbGw6I0JGMzkyQzsiIGQ9Ik0yNzYuOTY3LDBoLTg0LjQ5OEw3MC40MTUsMTc4LjM4NWg4NC40OThMMjc2Ljk2NywweiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0UyNTc0QzsiIGQ9Ik0yMy40NzIsMGg4NC40OThsMTIyLjA1MywxNzguMzg1aC04NC40OThMMjMuNDcyLDB6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRUZDNzVFOyIgZD0iTTE1NC45MTQsOTMuODg3YzU3LjI3MSwwLDEwMy4yNzYsNDYuMDA1LDEwMy4yNzYsMTAzLjI3NnMtNDYuMDA1LDEwMy4yNzYtMTAzLjI3NiwxMDMuMjc2ICAgUzUxLjYzOCwyNTQuNDM0LDUxLjYzOCwxOTcuMTYzUzk3LjY0Myw5My44ODcsMTU0LjkxNCw5My44ODd6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRDdCMzU0OyIgZD0iTTE1NC45MTQsMTIyLjA1M2MtNDEuMzEsMC03NS4xMSwzMy43OTktNzUuMTEsNzUuMTFzMzMuNzk5LDc1LjExLDc1LjExLDc1LjExICAgczc1LjExLTMzLjc5OSw3NS4xMS03NS4xMVMxOTYuMjI0LDEyMi4wNTMsMTU0LjkxNCwxMjIuMDUzeiBNMTU0LjkxNCwyNTMuNDk1Yy0zMC45ODMsMC01Ni4zMzItMjUuMzUtNTYuMzMyLTU2LjMzMiAgIHMyNS4zNS01Ni4zMzIsNTYuMzMyLTU2LjMzMnM1Ni4zMzIsMjUuMzUsNTYuMzMyLDU2LjMzMlMxODUuODk2LDI1My40OTUsMTU0LjkxNCwyNTMuNDk1eiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />      <span>Hard 1</span>
+      <div className='lil_arrow'></div>
+      <div className='bar'></div>
+      
+    </label>
+    
+    <input id='Users' name='radio' type='radio'></input>
+    <label htmlFor='Users'>
+    <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzMDAuNDM5IDMwMC40MzkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMwMC40MzkgMzAwLjQzOTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPHBhdGggc3R5bGU9ImZpbGw6I0JGMzkyQzsiIGQ9Ik0yNzYuOTY3LDBoLTg0LjQ5OEw3MC40MTUsMTc4LjM4NWg4NC40OThMMjc2Ljk2NywweiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0UyNTc0QzsiIGQ9Ik0yMy40NzIsMGg4NC40OThsMTIyLjA1MywxNzguMzg1aC04NC40OThMMjMuNDcyLDB6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRUZDNzVFOyIgZD0iTTE1NC45MTQsOTMuODg3YzU3LjI3MSwwLDEwMy4yNzYsNDYuMDA1LDEwMy4yNzYsMTAzLjI3NnMtNDYuMDA1LDEwMy4yNzYtMTAzLjI3NiwxMDMuMjc2ICAgUzUxLjYzOCwyNTQuNDM0LDUxLjYzOCwxOTcuMTYzUzk3LjY0Myw5My44ODcsMTU0LjkxNCw5My44ODd6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRDdCMzU0OyIgZD0iTTE1NC45MTQsMTIyLjA1M2MtNDEuMzEsMC03NS4xMSwzMy43OTktNzUuMTEsNzUuMTFzMzMuNzk5LDc1LjExLDc1LjExLDc1LjExICAgczc1LjExLTMzLjc5OSw3NS4xMS03NS4xMVMxOTYuMjI0LDEyMi4wNTMsMTU0LjkxNCwxMjIuMDUzeiBNMTU0LjkxNCwyNTMuNDk1Yy0zMC45ODMsMC01Ni4zMzItMjUuMzUtNTYuMzMyLTU2LjMzMiAgIHMyNS4zNS01Ni4zMzIsNTYuMzMyLTU2LjMzMnM1Ni4zMzIsMjUuMzUsNTYuMzMyLDU2LjMzMlMxODUuODk2LDI1My40OTUsMTU0LjkxNCwyNTMuNDk1eiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />      <span>Hard 2</span>
+      <div className='lil_arrow'></div>
+      
+      
+    </label>
+    </div>
+    </div>
     </div>
 );
 export default chooseMode;

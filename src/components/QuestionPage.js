@@ -3,13 +3,13 @@ import {connect} from 'react-redux';
 import {startAddChoices} from '../actions/questions';
 import configureStore from '../store/configureStore';
 import ProgressBar from './ProgressBar';
-
+import uuid from 'uuid';
 const store = configureStore();
 import { createHashHistory } from 'history'
 const history = createHashHistory()
 
 import {CSSTransition,TransitionGroup} from 'react-transition-group';
-import uuid from "uuid";
+
 export class QuestionPage extends React.Component{
     state={
         questions:this.props.questions[0],
@@ -84,11 +84,11 @@ export class QuestionPage extends React.Component{
     
     render(){
         return(
-          <TransitionGroup className="card-container">
+          <TransitionGroup >
                 <CSSTransition
                     key={uuid.v4()}
-                    timeout={4500}
-                    classNames="slide"
+                    timeout={1000}
+                    classNames="move"
                 >
         <div>
           <div className="progressbar">
@@ -315,7 +315,8 @@ export class QuestionPage extends React.Component{
             
         </div>
         </CSSTransition>
-            </TransitionGroup>
+        </TransitionGroup>
+      
         )
         
     }

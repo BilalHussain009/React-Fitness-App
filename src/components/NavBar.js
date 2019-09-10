@@ -7,7 +7,7 @@ const NavBar=()=>(
     <li className="menu-item"><a href="#0">Challenges</a></li>
     <li className="menu-item"><a href="#0">Reports</a></li>
     <li className="menu-item"><a href="#0">Profile</a></li>
-		<li className="menu-item"><a href="#0">About US</a></li>
+		<li className="menu-item"><a href="#0">Rate us</a></li>
   </ol>
 </nav>
 );

@@ -6,7 +6,7 @@ import NotFoundPage from '../components/NotFoundPage';
 import LoginPage from '../components/LoginPage';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
-
+import Reports from '../components/Reports';
 import {CSSTransition,TransitionGroup} from 'react-transition-group';
 import AllChallanges from '../components/AllChallanges';
 import chooseMode from '../components/chooseMode';
@@ -24,7 +24,7 @@ const AppRouter = () => (
         <Route path="/" component={LoginPage} exact={true} />
         <Route path="/dashboard" component={DashboardPage} />
         <Route path="/firsttime" component={FirstTime}/>
-        
+        <Route path="/reports" component={Reports}/>
         <Route path='/allChallenges' component={AllChallanges}/>
         <Route path='/choosemode' component={chooseMode}/>
         <Route component={NotFoundPage} />
